@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzador de Aplicaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1c1e24;
+            background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%);
+            color: #f0f0f0;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+        h1 {
+            font-size: 3.5em;
+            font-weight: 600;
+            margin-top: 20px; /* Espacio debajo del logo */
+            margin-bottom: 50px;
+            color: transparent;
+            background: linear-gradient(90deg, #8AB4F8, #f0f0f0, #A5D6A7, #F9AB00, #8AB4F8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 200% auto;
+            animation: shine 8s linear infinite;
+        }
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+                .main-logo {
+            width: 300px; /* Más grande y alargada */
+            height: 100px; /* Alargada */
+            object-fit: fill; /* Para que se alargue y rellene el espacio */
+            display: block; /* Para centrar */
+            margin: 0 auto;
+            margin-bottom: 20px; /* Espacio entre el logo y el título */
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+        .app-link {
+            background-color: #4a4f5a;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.1s ease, filter 0.1s ease, border-bottom-width 0.1s ease;
+            aspect-ratio: 1 / 1;
+            will-change: transform;
+            border-bottom: 7px solid #353940;
+            padding: 15px 10px 22px; /* Ajustado para el borde */
+        }
+        .app-link:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.1);
+        }
+        .app-link:active {
+            transform: translateY(2px);
+            border-bottom-width: 2px;
+            filter: brightness(0.95);
+        }
+        .app-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        .app-name {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/file_00000000da1c6243b82b85f3f75e29c6.png" alt="Logo Principal" class="main-logo">
+        <h1>APLICACIONES</h1>
+        <div class="app-grid">
+
+            <!-- App: HACER PEDIDOS -->
+            <a href="https://pedidos-tiendanueva.netlify.app/" target="_blank" rel="noopener noreferrer" class="app-link">
+                <svg class="app-icon" viewBox="0 0 64 64"><path fill="#4285F4" d="M52,6H38.29a6,6,0,0,0-11.22,0H12a6,6,0,0,0-6,6V52a6,6,0,0,0,6,6H52a6,6,0,0,0,6-6V12A6,6,0,0,0,52,6ZM32.68,8.4a2,2,0,1,1-1.36,0,2,2,0,0,1,1.36,0ZM54,52a2,2,0,0,1-2,2H12a2,2,0,0,1-2-2V12a2,2,0,0,1,2-2H25.17a6,6,0,0,0,11.66,0H52a2,2,0,0,1,2,2Z"/><rect fill="#8AB4F8" x="16" y="20" width="32" height="4" rx="1"/><rect fill="#8AB4F8" x="16" y="30" width="32" height="4" rx="1"/><rect fill="#8AB4F8" x="16" y="40" width="20" height="4" rx="1"/></svg>
+                <span class="app-name">HACER PEDIDOS</span>
+            </a>
+
+            <!-- App: BUSCAR ARTICULOS -->
+            <a href="https://articulos-proveedor.netlify.app/" target="_blank" rel="noopener noreferrer" class="app-link">
+                <svg class="app-icon" viewBox="0 0 64 64"><path fill="#4285F4" d="M59.7,51.2,49.3,40.8A24.8,24.8,0,0,0,54,30C54,16.2,42.8,5,29,5S4,16.2,4,30,15.2,55,29,55a24.2,24.2,0,0,0,13.8-4.5l11,11a4,4,0,0,0,5.6-5.7ZM29,47C19.6,47,12,39.4,12,30S19.6,13,29,13s17,7.6,17,17S38.4,47,29,47Z"/><path fill="#8AB4F8" d="M29,10a20,20,0,1,0,20,20A20,20,0,0,0,29,10Zm0,36A16,16,0,1,1,45,30,16,16,0,0,1,29,46Z"/></svg>
+                <span class="app-name">BUSCAR ARTICULOS</span>
+            </a>
+
+            <!-- App: PAN2025 -->
+            <a href="https://venta-pan.netlify.app/" target="_blank" rel="noopener noreferrer" class="app-link">
+                <svg class="app-icon" viewBox="0 0 64 64"><path fill="#34A853" d="M42,5H12a6,6,0,0,0-6,6V53a6,6,0,0,0,6,6H52a6,6,0,0,0,6-6V19ZM12,9H42V53H12Z"/><path fill="#A5D6A7" d="M46,5H42V19h4a6,6,0,0,0,6-6V5Z"/><rect fill="#A5D6A7" x="18" y="24" width="28" height="4"/><rect fill="#A5D6A7" x="18" y="36" width="28" height="4"/><rect fill="#A5D6A7" x="18" y="48" width="18" height="4"/></svg>
+                <span class="app-name">PAN2025</span>
+            </a>
+
+            <!-- App: APLICAR PORCENTAJES -->
+            <a href="https://gemini.google.com/app?hl=es-ES" target="_blank" rel="noopener noreferrer" class="app-link">
+                <svg class="app-icon" viewBox="0 0 64 64"><path fill="#FBBC04" d="M16,13a7,7,0,1,0,7,7A7,7,0,0,0,16,13Zm0,10a3,3,0,1,1,3-3A3,3,0,0,1,16,23Z"/><path fill="#F9AB00" d="M48,34a7,7,0,1,0,7,7A7,7,0,0,0,48,34Zm0,10a3,3,0,1,1,3-3A3,3,0,0,1,48,44Z"/><rect fill="#F9AB00" x="8.2" y="30" width="47.6" height="4" transform="rotate(-45 32 32)"/></svg>
+                <span class="app-name">APLICAR PORCENTAJES</span>
+            </a>
+
+            <!-- App: PEDIDOS POR PROVEEDOR -->
+            <a href="https://proyecto-productos-proveedores.netlify.app/" target="_blank" rel="noopener noreferrer" class="app-link">
+                <svg class="app-icon" viewBox="0 0 64 64"><path fill="#EA4335" d="M52,10H12a6,6,0,0,0-6,6V52a6,6,0,0,0,6,6H52a6,6,0,0,0,6-6V16A6,6,0,0,0,52,10ZM10,16a2,2,0,0,1,2-2H52a2,2,0,0,1,2,2V28H10Zm44,36H12a2,2,0,0,1-2-2V32H54V52A2,2,0,0,1,54,52Z"/><path fill="#F28B82" d="M38,42H26a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H38a1,1,0,0,0,1-1V43A1,1,0,0,0,38,42Zm-1,6H27V44H37Z"/><path fill="#F28B82" d="M21,18h-5a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h5a1,1,0,0,0,1-1V19A1,1,0,0,0,21,18Zm-1,4h-3V20h3Z"/></svg>
+                <span class="app-name">PEDIDOS POR PROVEEDOR</span>
+            </a>
+
+            <!-- App: PORCENTAJES DE LOS PRODUCTOS -->
+            <a href="https://porcentajes-articulos-varios.netlify.app/" target="_blank" rel="noopener noreferrer" class="app-link">
+                <svg class="app-icon" viewBox="0 0 64 64"><path fill="#F9AB00" d="M16,13a7,7,0,1,0,7,7A7,7,0,0,0,16,13Zm0,10a3,3,0,1,1,3-3A3,3,0,0,1,16,23Z"/><path fill="#FBBC04" d="M48,34a7,7,0,1,0,7,7A7,7,0,0,0,48,34Zm0,10a3,3,0,1,1,3-3A3,3,0,0,1,48,44Z"/><rect fill="#FBBC04" x="8.2" y="30" width="47.6" height="4" transform="rotate(-45 32 32)"/></svg>
+                <span class="app-name">PORCENTAJES DE LOS PRODUCTOS</span>
+            </a>
+
+            <!-- Añade más aplicaciones aquí -->
+
+        </div>
+    </div>
+</body>
+</html>
