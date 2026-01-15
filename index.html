@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +14,13 @@
             background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%);
             color: #f0f0f0;
         }
+
         .navbar-brand img {
             width: 300px;
             height: 115px;
             object-fit: fill;
         }
+
         .app-card {
             background-color: #2a2f3a;
             border: none;
@@ -26,19 +29,23 @@
             text-decoration: none;
             color: #f0f0f0;
         }
+
         .app-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
             color: #fff;
         }
+
         .app-card .app-icon {
             width: 48px;
             height: 48px;
             margin-bottom: 1rem;
         }
+
         .app-card .card-title {
             font-weight: 500;
         }
+
         .page-title {
             font-weight: 600;
             color: transparent;
@@ -48,16 +55,19 @@
             background-size: 200% auto;
             animation: shine 8s linear infinite;
         }
+
         @keyframes shine {
             to {
                 background-position: 200% center;
             }
         }
+
         .footer {
             color: #888;
         }
     </style>
 </head>
+
 <body data-bs-theme="dark">
 
     <nav class="navbar">
@@ -70,14 +80,21 @@
 
     <div class="container-fluid my-5 px-md-5">
         <h1 class="display-2 text-center mb-5 page-title">APLICACIONES</h1>
-        
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
 
             <!-- App: HACER PEDIDOS -->
             <div class="col">
-                <a href="https://pedidos-tiendanueva.netlify.app/" target="_blank" rel="noopener noreferrer" class="card h-100 app-card">
+                <a href="https://pedidos-tiendanueva.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="card h-100 app-card">
                     <div class="card-body text-center d-flex flex-column justify-content-center">
-                        <svg class="app-icon mx-auto" viewBox="0 0 64 64"><path fill="#4285F4" d="M52,6H38.29a6,6,0,0,0-11.22,0H12a6,6,0,0,0-6,6V52a6,6,0,0,0,6,6H52a6,6,0,0,0,6-6V12A6,6,0,0,0,52,6ZM32.68,8.4a2,2,0,1,1-1.36,0,2,2,0,0,1,1.36,0ZM54,52a2,2,0,0,1-2,2H12a2,2,0,0,1-2-2V12a2,2,0,0,1,2-2H25.17a6,6,0,0,0,11.66,0H52a2,2,0,0,1,2,2Z"/><rect fill="#8AB4F8" x="16" y="20" width="32" height="4" rx="1"/><rect fill="#8AB4F8" x="16" y="30" width="32" height="4" rx="1"/><rect fill="#8AB4F8" x="16" y="40" width="20" height="4" rx="1"/></svg>
+                        <svg class="app-icon mx-auto" viewBox="0 0 64 64">
+                            <path fill="#4285F4"
+                                d="M52,6H38.29a6,6,0,0,0-11.22,0H12a6,6,0,0,0-6,6V52a6,6,0,0,0,6,6H52a6,6,0,0,0,6-6V12A6,6,0,0,0,52,6ZM32.68,8.4a2,2,0,1,1-1.36,0,2,2,0,0,1,1.36,0ZM54,52a2,2,0,0,1-2,2H12a2,2,0,0,1-2-2V12a2,2,0,0,1,2-2H25.17a6,6,0,0,0,11.66,0H52a2,2,0,0,1,2,2Z" />
+                            <rect fill="#8AB4F8" x="16" y="20" width="32" height="4" rx="1" />
+                            <rect fill="#8AB4F8" x="16" y="30" width="32" height="4" rx="1" />
+                            <rect fill="#8AB4F8" x="16" y="40" width="20" height="4" rx="1" />
+                        </svg>
                         <h5 class="card-title mt-3">HACER PEDIDOS</h5>
                     </div>
                 </a>
@@ -85,19 +102,33 @@
 
             <!-- App: BUSCAR ARTICULOS -->
             <div class="col">
-                <a href="https://articulos-proveedor.netlify.app/" target="_blank" rel="noopener noreferrer" class="card h-100 app-card">
+                <a href="https://articulos-proveedor.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="card h-100 app-card">
                     <div class="card-body text-center d-flex flex-column justify-content-center">
-                        <svg class="app-icon mx-auto" viewBox="0 0 64 64"><path fill="#4285F4" d="M59.7,51.2,49.3,40.8A24.8,24.8,0,0,0,54,30C54,16.2,42.8,5,29,5S4,16.2,4,30,15.2,55,29,55a24.2,24.2,0,0,0,13.8-4.5l11,11a4,4,0,0,0,5.6-5.7ZM29,47C19.6,47,12,39.4,12,30S19.6,13,29,13s17,7.6,17,17S38.4,47,29,47Z"/><path fill="#8AB4F8" d="M29,10a20,20,0,1,0,20,20A20,20,0,0,0,29,10Zm0,36A16,16,0,1,1,45,30,16,16,0,0,1,29,46Z"/></svg>
-                <h5 class="card-title mt-3">BUSCAR ARTICULOS</h5>
+                        <svg class="app-icon mx-auto" viewBox="0 0 64 64">
+                            <path fill="#4285F4"
+                                d="M59.7,51.2,49.3,40.8A24.8,24.8,0,0,0,54,30C54,16.2,42.8,5,29,5S4,16.2,4,30,15.2,55,29,55a24.2,24.2,0,0,0,13.8-4.5l11,11a4,4,0,0,0,5.6-5.7ZM29,47C19.6,47,12,39.4,12,30S19.6,13,29,13s17,7.6,17,17S38.4,47,29,47Z" />
+                            <path fill="#8AB4F8"
+                                d="M29,10a20,20,0,1,0,20,20A20,20,0,0,0,29,10Zm0,36A16,16,0,1,1,45,30,16,16,0,0,1,29,46Z" />
+                        </svg>
+                        <h5 class="card-title mt-3">BUSCAR ARTICULOS</h5>
                     </div>
                 </a>
             </div>
 
             <!-- App: PEDIDOS POR PROVEEDOR -->
             <div class="col">
-                <a href="https://pedidos-segun-proveedores.netlify.app/" target="_blank" rel="noopener noreferrer" class="card h-100 app-card">
+                <a href="https://pedidos-segun-proveedores.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="card h-100 app-card">
                     <div class="card-body text-center d-flex flex-column justify-content-center">
-                        <svg class="app-icon mx-auto" viewBox="0 0 64 64"><path fill="#EA4335" d="M52,10H12a6,6,0,0,0-6,6V52a6,6,0,0,0,6,6H52a6,6,0,0,0,6-6V16A6,6,0,0,0,52,10ZM10,16a2,2,0,0,1,2-2H52a2,2,0,0,1,2,2V28H10Zm44,36H12a2,2,0,0,1-2-2V32H54V52A2,2,0,0,1,54,52Z"/><path fill="#F28B82" d="M38,42H26a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H38a1,1,0,0,0,1-1V43A1,1,0,0,0,38,42Zm-1,6H27V44H37Z"/><path fill="#F28B82" d="M21,18h-5a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h5a1,1,0,0,0,1-1V19A1,1,0,0,0,21,18Zm-1,4h-3V20h3Z"/></svg>
+                        <svg class="app-icon mx-auto" viewBox="0 0 64 64">
+                            <path fill="#EA4335"
+                                d="M52,10H12a6,6,0,0,0-6,6V52a6,6,0,0,0,6,6H52a6,6,0,0,0,6-6V16A6,6,0,0,0,52,10ZM10,16a2,2,0,0,1,2-2H52a2,2,0,0,1,2,2V28H10Zm44,36H12a2,2,0,0,1-2-2V32H54V52A2,2,0,0,1,54,52Z" />
+                            <path fill="#F28B82"
+                                d="M38,42H26a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H38a1,1,0,0,0,1-1V43A1,1,0,0,0,38,42Zm-1,6H27V44H37Z" />
+                            <path fill="#F28B82"
+                                d="M21,18h-5a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h5a1,1,0,0,0,1-1V19A1,1,0,0,0,21,18Zm-1,4h-3V20h3Z" />
+                        </svg>
                         <h5 class="card-title mt-3">PEDIDOS POR PROVEEDOR</h5>
                     </div>
                 </a>
@@ -105,9 +136,13 @@
 
             <!-- App: CONTROL PAN -->
             <div class="col">
-                <a href="https://control-pan.netlify.app/" target="_blank" rel="noopener noreferrer" class="card h-100 app-card">
+                <a href="https://control-pan.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="card h-100 app-card">
                     <div class="card-body text-center d-flex flex-column justify-content-center">
-                        <svg class="app-icon mx-auto" viewBox="0 0 64 64"><path fill="#F9AB00" d="M12,48h10V22H12V48z M27,48h10V12H27V48z M42,48h10V32H42V48z"/><rect fill="#F9AB00" x="8" y="52" width="48" height="4" rx="1"/></svg>
+                        <svg class="app-icon mx-auto" viewBox="0 0 64 64">
+                            <path fill="#F9AB00" d="M12,48h10V22H12V48z M27,48h10V12H27V48z M42,48h10V32H42V48z" />
+                            <rect fill="#F9AB00" x="8" y="52" width="48" height="4" rx="1" />
+                        </svg>
                         <h5 class="card-title mt-3">CONTROL PAN</h5>
                     </div>
                 </a>
@@ -123,4 +158,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
