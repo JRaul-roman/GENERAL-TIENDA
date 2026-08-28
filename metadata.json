@@ -1,0 +1,8 @@
+{
+  "name": "Lanzador de Aplicaciones",
+  "description": "Lanzador y panel central de aplicaciones para tienda, gestión de pedidos y búsqueda de artículos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

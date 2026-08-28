@@ -1,0 +1,17 @@
+{
+  "name": "Lanzador de Aplicaciones - Tienda",
+  "short_name": "Tienda Apps",
+  "description": "Panel central de aplicaciones para gestión de tienda y pedidos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1c1e24",
+  "theme_color": "#1c1e24",
+  "icons": [
+    {
+      "src": "/file_00000000da1c6243b82b85f3f75e29c6.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
